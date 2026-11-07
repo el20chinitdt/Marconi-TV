@@ -197,10 +197,10 @@ dm('tvazteca.com',['Azteca Internacional']);dm('venevision.net',['Venevisión In
 dm('etbon.eus',['ETB1 On','ETB2 On']);dm('arirang.com',['Arirang TV Korea']);dm('www3.nhk.or.jp',['NHK World Japan']);
 dm('hispantv.com',['Hispan TV']);dm('espanol.cgtn.com',['CGTN Español']);
 dm('canalnet.tv',['Net TV']);dm('canalorbe21.com',['Orbe 21']);dm('mariavision.com',['María Visión']);dm('alientovision.com',['Aliento Visión']);
-dm('kanalddrama.com',['Vive Kanal D Drama']);dm('revistachacra.com.ar',['Chacra TV']);
+dm('kanalddrama.com',['Vive Kanal D Drama']);dm('elgarage.com',['El Garage']);dm('revistachacra.com.ar',['Chacra TV']);
 /* Logos propios: pegá la URL de la imagen entre las comillas de cada canal y tiene prioridad sobre el automático */
-var L={'Alpha TV':'','El Garage':'','Clan':'','El Reino Infantil':'','Primired':'','Laika Channel':'','Magic Kids':'','Retromágico':'','Delmi TV':'','Delmi Channel':'','Star':'','Romance Channel':'','Teleclásica':'','Cindie TV':'','Novelísima':'','El Folklórico TV':'','Wox TV':'','Music 21':'','Maranatha':'','Ciudad Magazine':'','Unife':'','Argentinísima Satelital':'','UCL Televisión':''};
-C.forEach(function(c){if(c[0].indexOf('LPF Play')===0)D[c[0]]='ligaprofesional.ar';if(!c[3]&&L[c[0]])c[3]=L[c[0]];if(!c[3]&&D[c[0]])c[3]=G+D[c[0]]});
+var L={'TyC Sports Fan':'https://www.totalmedios.com/img/noticias/2026/08/6a90d38c2b1d7.jpg','TyC Sports':'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYCIxpPnCHv2xFALL9wh_GDhpaW8_4CY-gixbpCgYDU1le-WKgqWWzs9iDLgQH3PsRRmM7fWA8qKn3zNyaHKR-DwYzLJQjXPjtCguu0V2mt7zqtBbnQZGoTz4BpNK6zfKtmSWzCVBV-kVRhlhMu-rb7DxGb_HbDjFUeZFZ-z04zMA5voP7CIIYEO3SfOA/s256/TyC%20Sports.png','Net TV':'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEetal6QatB2F0nHYtb1lHfMJ7D5tO4uCpPXTJeaST_cheI8z-zYr7VvXULj8UoIF2VnvBrP8MGiooIbT_Hp0mh5ILFK8Jf8XP-7ApqiP0Lg6Jw7dmYLZS6FJ72NpiW3bOk8aqfDOkQHhfMUTsMv9H2W0duMyPiWQEAQFJNNxUU4gCtfI5MfwOAh_UA2Q/s256/386809492_255811943955703_6900124546687008175_n.png','Alpha TV':'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcbvNEkATEeeNlikllpM5zgCaxZdysXyUvTedqJ-X_qYWwKb5up0qOrtvYe2Brrv98JEL0Tlg9lab2rMx7RRRapy1RPJsRxI8kaPSUg771YiwY9sPwfwbFr82VPmo9OR2cPuinFF6dGTNsM7RLzTtpgLP02mtx_TGoPwA5dCn4A1-Gg4ZcPNElVr_ocOE/s256/IMG-20260914-WA0017-removebg-preview__1_-removebg-preview.png','Clan':'','El Reino Infantil':'https://www.appcreator24.com/srv/imgs/seccs/38846461_ico.png','Primired':'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlhiVD_qOAEfM3RGvtDMIeEyNEIwgYQ7PFXPlClFn05Ktw5weRgxuglPYBaRAlBlzrFhn9F-QzQDHCnl8ayXr48sHK9qSA7Wqld_aj_K6vahNPl0-dbbfWZslHO6LkiP44Gj9H_09qlcMzviq83uf9oYMSgD80cZCgGuQMyru2G8XScWzo5GW3A-Suzio/s256/526f5dca-5ebd-4c8e-9754-008d09ba82f0_removalai_preview.png','Laika Channel':'','Magic Kids':'','Retromágico':'','Delmi TV':'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRrpdAg3XUCk5qgSaaqEw9j90lthelbH5LoIG_GhDb1W8eu2zXCWvPi-ddmMS8blbffzJNBvMLpu5Kgk87vUxmXTfAQouLBo8pC2l8i7v2dQfIB4sEf8lxdUgo0yKVi5iQBvWhAJGwW6cUQ4eRLiGNhQQO85Hecn17gL-cY68ihCQpLEOD0tbSJjLVuek/s256/Delmi%20TV%20%282%29.png','Delmi Channel':'','Star':'','Romance Channel':'','Teleclásica':'','Cindie TV':'','Novelísima':'','El Folklórico TV':'','Wox TV':'','Music 21':'','Maranatha':'','Ciudad Magazine':'','Unife':'','Argentinísima Satelital':'','UCL Televisión':''};
+C.forEach(function(c){if(c[0].indexOf('LPF Play')===0)D[c[0]]='ligaprofesional.ar';if(!c[3]&&L[c[0]])c[3]=L[c[0]];if(!c[3]&&D[c[0]]){c[3]=G+D[c[0]];c[4]=1}});
 
 var P='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
 I={rew:'<path d="M1 4v6h6M3.5 15a9 9 0 1 0 2.1-9.4L1 10"/>',fwd:'<path d="M23 4v6h-6M20.5 15a9 9 0 1 1-2.1-9.4L23 10"/>',sig:'<path d="M5 12a7 7 0 0 1 14 0M8.5 12a3.5 3.5 0 0 1 7 0M12 12v8"/>',srch:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',back:'<path d="M19 12H5M12 19l-7-7 7-7"/>',prev:'<path d="M19 20 9 12l10-8zM5 19V5"/>',next:'<path d="M5 4l10 8-10 8zM19 5v14"/>',pause:'<path d="M7 4v16M17 4v16"/>',play:'<path d="M6 4l14 8-14 8z"/>',vol:'<path d="M11 5 6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/>',mute:'<path d="M11 5 6 9H2v6h4l5 4zM22 9l-6 6M16 9l6 6"/>',cast:'<path d="M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6M2 12a9 9 0 0 1 8 8M2 16a5 5 0 0 1 4 4M2 20h.01"/>',list:'<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',full:'<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>'};
@@ -309,6 +309,50 @@ else if(k===77)$('mu').click()};
 
 $('rows').addEventListener('error',function(e){var t=e.target;if(t.className==='lg'){var x=document.createElement('span');x.className='ini';x.textContent=t.alt;t.parentNode.replaceChild(x,t)}},true);
 $('pg').onerror=function(){this.style.display='none'};
+
+/* Logos que faltan: la página los busca sola en la base pública de iptv-org (logo y web oficial de cada canal) y guarda lo que encuentra */
+var CK='mtv_logos_v1';
+function nm(t){t=t.toLowerCase();if(t.normalize)t=t.normalize('NFD').replace(/[\u0300-\u036f]/g,'');return t.replace(/[^a-z0-9]/g,'')}
+function applyCache(){try{var m=JSON.parse(localStorage.getItem(CK)||'{}'),ch=false;C.forEach(function(c){if(!c[3]&&m[c[0]]){c[3]=m[c[0]];ch=true}});return ch}catch(e){return false}}
+function fetchLogos(){
+var need=C.filter(function(c){return !c[3]});if(!need.length)return;
+try{if(+localStorage.getItem(CK+'_t')>Date.now()-6048e5)return}catch(e){}
+var A='https://iptv-org.github.io/api/';
+Promise.all([fetch(A+'channels.json').then(function(r){return r.json()}),fetch(A+'logos.json').then(function(r){return r.json()})]).then(function(d){
+var pref=['AR','ES','MX','CO','CL','UY','PE','VE','US'],idx={},best={},found={},ch=false;
+d[0].forEach(function(x){[x.name].concat(x.alt_names||[]).forEach(function(k){var n=nm(k||'');if(n&&pref.indexOf(x.country)>-1)(idx[n]=idx[n]||[]).push(x)})});
+d[1].forEach(function(l){var w=(l.feed?0:1e6)+(l.width||0),b=best[l.channel];if(l.url&&(!b||w>b.w))best[l.channel]={w:w,u:l.url}});
+need.forEach(function(c){var list=(idx[nm(c[0])]||[]).sort(function(a,b){return pref.indexOf(a.country)-pref.indexOf(b.country)}),u=null,i;
+for(i=0;i<list.length&&!u;i++)if(best[list[i].id])u=best[list[i].id].u;
+for(i=0;i<list.length&&!u;i++)if(list[i].website)u=G+list[i].website.replace(/^https?:\/\//,'').split('/')[0];
+if(u){c[3]=u;found[c[0]]=u;ch=true}});
+try{var o=JSON.parse(localStorage.getItem(CK)||'{}');for(var k in found)o[k]=found[k];localStorage.setItem(CK,JSON.stringify(o));localStorage.setItem(CK+'_t',Date.now())}catch(e){}
+if(ch)render()}).catch(function(){})}
+/* Logos de tu plataforma (canalesenvivodeargentina.blogspot.com): se leen del feed del blog y reemplazan a los automáticos */
+var BK='mtv_blog_v1',BL='https://canalesenvivodeargentina.blogspot.com/feeds/posts/default?alt=json-in-script&max-results=500',jc=0;
+function jsonp(u,cb){var n='__mtv'+(jc++),t=document.createElement('script');
+function end(){try{delete window[n]}catch(e){window[n]=undefined}if(t.parentNode)t.parentNode.removeChild(t)}
+window[n]=function(d){end();cb(d)};t.onerror=function(){end();cb(null)};t.src=u+'&callback='+n;document.head.appendChild(t)}
+function applyBlog(){try{var m=JSON.parse(localStorage.getItem(BK)||'{}'),ch=false;C.forEach(function(c){if(m[c[0]]&&(!c[3]||c[4])){c[3]=m[c[0]];c[4]=0;ch=true}});return ch}catch(e){return false}}
+function fetchBlog(done){
+try{if(+localStorage.getItem(BK+'_t')>Date.now()-6048e5){done();return}}catch(e){}
+var map={},k=1;
+function page(){jsonp(BL+'&start-index='+k,function(d){
+var es=(d&&d.feed&&d.feed.entry)||[];
+es.forEach(function(e){var t=((e.title&&e.title.$t)||'').replace(/\s*\|?\s*en\s*vivo\s*$/i,''),th=e['media$thumbnail']&&e['media$thumbnail'].url;
+if(t&&th)map[nm(t)]=th.replace(/\/[sw]\d+(-[a-z0-9-]*)?\//i,'/s256/')});
+if(es.length>=500&&k<3000){k+=500;page()}else fin(es.length>0||k>1)})}
+function fin(ok){
+if(!ok){done();return}
+var keys=Object.keys(map),found={},ch=false;
+C.forEach(function(c){var n=nm(c[0]),u=map[n],i,best=null;
+if(!u&&n.length>=4){for(i=0;i<keys.length;i++){var q=keys[i];if((q.indexOf(n)===0||(q.length>=5&&n.indexOf(q)===0))&&(!best||q.length<best.length))best=q}if(best)u=map[best]}
+if(u){found[c[0]]=u;if(!c[3]||c[4]){c[3]=u;c[4]=0;ch=true}}});
+try{localStorage.setItem(BK,JSON.stringify(found));localStorage.setItem(BK+'_t',Date.now())}catch(e){}
+if(ch)render();done()}
+page()}
+applyBlog();applyCache();
 render();
+setTimeout(function(){fetchBlog(fetchLogos)},1500);
 })();
 </script></body></html>
